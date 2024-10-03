@@ -9,8 +9,5 @@
 遇到问题:git显示 LF will be replaced by CRLF the next time Git touches it
 原因分析1:在文本处理中，CR（CarriageReturn），LF（LineFeed），CR/LF是不同操作系统上使用的换行符
 见[论坛](https://blog.csdn.net/u012757419/article/details/105614028)
-解决方式:$ git config --global core.autocrlf true
-
-
-
+解决方式:使用命令行 $ git config --global core.autocrlf true
 
