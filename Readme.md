@@ -11,3 +11,7 @@
 见[论坛](https://blog.csdn.net/u012757419/article/details/105614028)
 解决方式:使用命令行 $ git config --global core.autocrlf true
 
+18:30
+遇到问题:尝试在vscode中直接使用git快捷提交但一直卡住转圈,git bash可以正常commit
+原因分析:见[论坛](https://blog.csdn.net/Er_Studying_Bai/article/details/128088429)
+解决方式:修改设置
