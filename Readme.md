@@ -15,3 +15,6 @@
 遇到问题:尝试在vscode中直接使用git快捷提交但一直卡住转圈,git bash可以正常commit
 原因分析:见[论坛](https://blog.csdn.net/Er_Studying_Bai/article/details/128088429)
 解决方式:修改设置
+
+18:50
+通过vscode直接在github上建立仓库
