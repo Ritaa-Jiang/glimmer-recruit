@@ -26,6 +26,4 @@
 遇到问题：git提交显示：
 fatal: unable to access 'https://github.com/.../.git':Recv failure Connection was reset
 原因分析:见[论坛](https://blog.csdn.net/m0_63230155/article/details/132070860)
-解决方式:在终端执行
-git config --global --unset http.proxy 
-git config --global --unset https.proxy
+解决方式:在终端执行命令行
