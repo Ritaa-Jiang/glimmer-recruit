@@ -29,3 +29,4 @@ fatal: unable to access 'https://github.com/.../.git':Recv failure Connection wa
 解决方式:在终端执行命令行
 
 后来又报错！按方法二把系统代理端口改成7890了
+结果尝试了一下又自己好了。。最终没有改端口
