@@ -27,3 +27,5 @@
 fatal: unable to access 'https://github.com/.../.git':Recv failure Connection was reset
 原因分析:见[论坛](https://blog.csdn.net/m0_63230155/article/details/132070860)
 解决方式:在终端执行命令行
+
+后来又报错！按方法二把系统代理端口改成7890了
