@@ -39,6 +39,9 @@ sessionStorage 的数据更改也是同步的，但**仅限于同一个标签页
 →从上面看出session storage相比local storage来说数据的存储时长更短，更安全，但是不适宜某些需要长期或多窗口使用的数据的储存
 
 ### 3.记录B站网络活动(network)(你能从中收集什么信息呢)
+
+#### 这里有一个html的视频！！GitHub预览界面看不到
+
 <video width="640" height="480" controls>
     <source src="./media/network.mp4" type="video/mp4">
 </video>
