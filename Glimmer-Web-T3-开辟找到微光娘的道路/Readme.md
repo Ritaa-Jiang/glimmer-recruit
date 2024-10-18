@@ -49,7 +49,7 @@ min-height: 100vh;
 ``` 
 原因分析：
 区分min-height: 100%; 与min-height: 100vh;
-即便父元素限制了宽高，只要子元素设置height:100vh，那么子元素的高度就会和屏幕一样高
+即便父元素限制了宽高，只要子元素设置height:100vh，那么子元素的高度就会和屏幕一样高了
 
 ![辨析](https://pic.imgdb.cn/item/671271b3d29ded1a8c0ab023.png "辨析")
 
