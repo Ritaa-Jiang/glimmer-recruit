@@ -39,4 +39,4 @@ fatal: unable to access 'https://github.com/.../.git':Recv failure Connection wa
 fatal: unable to access 'https://github.com/.../.git':Recv failure Connection was reset
 原因分析:见[论坛](https://blog.csdn.net/m0_63230155/article/details/132070860)
 见[论坛](https://blog.csdn.net/lvmengzou/article/details/119350664)
-解决方式:在终端执行命令行3次 然后清楚系统代理几次 重启一遍电脑 清空系统代理再挂梯子
+解决方式:在终端执行命令行3次 然后清楚系统代理几次 重启一遍电脑 清空系统代理再挂梯子 然后就一直都可以了！
