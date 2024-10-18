@@ -1,0 +1,73 @@
+body {
+    background-color: #f0ffff;
+    display: flex;
+    justify-content: center;/*水平居中*/
+    align-items: center;/*垂直居中*/
+    /*以上为布局*/
+    margin: 0;
+    min-height: 100vh; 
+    /*一直没处理出来area在竖直方向不居中的问题，上面这一句是善用搜索解决的，TT,具体原因分析见T2目录下的readme.md*/
+}
+
+.green{
+    background-color: #68cc68;
+}
+.blue{
+    background-color: #b3c5e8;
+}
+.yellow{
+    background-color: #ffff00;
+}
+.box{
+    width: 60px;
+    height: 30px;
+    margin: 15px;
+    /*一个隔了15 两个隔了30*/
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex布局*/
+    /* flex-direction: column;行和列不要弄错了，，，， */
+    flex-direction: row; 
+}
+.parking-lot{
+    display: flex;
+    flex-direction: column;
+    /*三行竖直排列*/
+    justify-content: center;
+    align-items: center;
+    /*上面这些来处理布局和位置，在水平轴上对齐居中*/
+    border: 5px solid #87ceeb;
+    border-radius: 15px; 
+    /* 圆角 */
+    padding: 15px;
+    /*与小方块形成内径*/
+    /*padding 15 方块的margin 15 加起来30*/
+    margin: 30px;
+    /*将大方块隔开*/
+}
+.area {
+    display: flex;
+    justify-content: space-around;
+    /*是子元素也就是两个lot在容器中平均分布，而不是容器大盒子水平居中*/
+    /*大盒子也水平居中*/
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 800px) {
+    .area {
+        flex-direction: column;
+        justify-content: space-around; 
+    }
+}
+/* 指的是在当width小于800px时将flex-direction改为column */
+/* 媒体查询：针对不同媒体类型可以定制不同的样式规则。 */
+/* 响应式布局 参考菜鸟文档 参考：https://www.runoob.com/css3/css3-mediaqueries.html */
+
+/*两个lot外面还是得找个东西包上(area)才方便随页面大小调整布局*/

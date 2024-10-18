@@ -30,3 +30,7 @@ fatal: unable to access 'https://github.com/.../.git':Recv failure Connection wa
 
 后来又报错！按方法二把系统代理端口改成7890了
 结果尝试了一下又自己好了。。最终没有改端口
+
+# 1017-1018
+
+  艰难的在与高数的奋战中匀时间来战html css和javascript
