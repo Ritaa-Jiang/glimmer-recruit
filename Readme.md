@@ -19,7 +19,7 @@
 18:50
 通过vscode直接在github上建立仓库
 
-# 1015-1016
+# 11016
   奋战html css
 
 23:50 
@@ -34,9 +34,14 @@ fatal: unable to access 'https://github.com/.../.git':Recv failure Connection wa
 # 1017-1018
 
   艰难的在与高数的奋战中匀时间来战html css和javascript
+  把2.3题一起交了！
 
 遇到问题：git提交显示：
 fatal: unable to access 'https://github.com/.../.git':Recv failure Connection was reset
 原因分析:见[论坛](https://blog.csdn.net/m0_63230155/article/details/132070860)
 见[论坛](https://blog.csdn.net/lvmengzou/article/details/119350664)
 解决方式:在终端执行命令行3次 然后清楚系统代理几次 重启一遍电脑 清空系统代理再挂梯子 然后就一直都可以了！
+
+# 1019
+
+  看廖雪峰教程。菜鸟教程和pink的b站教程和源码奋战JavaScript并且交了第4题^^
