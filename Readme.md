@@ -45,3 +45,6 @@ fatal: unable to access 'https://github.com/.../.git':Recv failure Connection wa
 # 1019
 
   看廖雪峰教程。菜鸟教程和pink的b站教程和源码奋战JavaScript并且交了第4题^^
+
+遇到问题：git提交显示。。。。。
+依然无数次清楚系统代理并重启。。。。。
