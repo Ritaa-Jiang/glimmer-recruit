@@ -1,0 +1,184 @@
+/*这个暂时不用删 做一些微调 然后复制到另一个文件夹 把css删减排列后再扔到交题文件夹里*/
+
+body, html {
+    /* 移除内外边距 */
+    margin: 0; 
+    padding: 0; 
+    /* 设置默认字体 */
+    font-family: Arial, sans-serif; 
+    font-weight: 550;
+    /* 这个是渐变页面背景色  */
+    /* background-image: linear-gradient(to bottom right, #4c84d1, #7295e7, #98a5f7, #b9b5fa, #d9d5fc, #ffffff); */
+    /* background-image: linear-gradient(to bottom right, #6a9ad3, #8db7e0, #b0d4eb, #d3f1f5, #f4fcfe, #ffffff); */
+    /* background-image: linear-gradient(to bottom right, #5d9cec, #84b3f0, #a9c7f4, #cbe7f8, #eaf7fc, #ffffff); */
+    /* background-image: linear-gradient(to bottom right, #5a9ee3, #84c2ed, #aed5f7, #d7e8ff, #f7faff, #ffffff); */
+    background-image: linear-gradient(to bottom right, #ffffff, #ffeef8, #fcd8e6, #f9c4e4);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.main_introduction{
+    display: flex;
+    flex-direction: column; 
+    /* 主轴(垂直)上靠下对齐 */
+    justify-content: flex-end; 
+    /* 交叉轴（水平）居中 */
+    align-items: center; 
+    height: 100vh; 
+    /*上右下左*/
+    margin: 100px 20px 20px 20px;
+    height: 400px;
+    width: 1000px;
+}
+
+.color1{
+    background-image: linear-gradient(to bottom right,#91defe,#99c0f9,#bdb6ec,#d7b3e3,#efb3d5,#f9bccc); 
+}
+
+.profile_photo{
+    display: flex;
+    /* 子元素垂直排列 */
+    flex-direction: column; 
+    /* 上靠下对齐 */
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+.block{
+    /* background-color: #c8efff;  */
+    /* background-image: linear-gradient(to bottom, #98cafc,#ffffff); */
+    background-image: linear-gradient(to bottom, #e7c7ebe4,#ffffff);
+    margin: 10px 20px;
+    /* 添加内边距以便看到背景 */
+    padding: 20px; 
+    /* 设置最小高度以便看到背景 */
+    min-height: 200px; 
+    width: 1000px;
+    /* border: 5px solid #ffffff; */
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(228, 179, 235, 0.5);
+}
+
+.title1{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    /*水平居中*/
+    align-items: center;
+    /*垂直居中*/
+    font-size: 50px;
+    font-family: Arial, sans-serif; 
+    color: #ffffff;
+    /* color: #6e7ebe; */
+    font-weight: 700;
+}
+
+.box1{
+    display: flex;
+    flex-direction: row; 
+}
+
+.introduction{
+    width: 50%;
+}
+.introduction2{
+    width: 30%;
+    /* float: right; */
+    position: absolute;
+    right: 0;
+}
+.hobby1{
+    width: 50%;
+}
+.hobby2{
+    width: 50%;
+}
+.why2{
+    margin:0 25px 0 25px;
+    /* 把两个框隔开 */
+    width: 40%;
+}
+
+.why_font{
+    color:#3e52a3;
+    /* color:#72284d; */
+}
+
+.video{
+    width: 100%;
+}
+
+/* 不要加点啊啊啊这个是针对标签的选择器哇又把自己坑了 */
+footer{
+    width:100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #efb3d5;
+    color: white;
+    font-weight: bold;
+}
+
+h5{
+    text-decoration-line:line-through;
+    color:#3e52a3;
+}
+
+
+p{
+    /* color:#000000c2; */
+    /* color:#3e52a3; */
+    color:#72284d;
+}
+
+/* 标题导航栏，参考了pink老师的结构 */
+.navbar {
+    /*不随页面滑动*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(to top left, #e0b3ff, #c8a3e9, #b09ed6, #998ac8, #8273b9, #6b5cb9);
+    /* background-color: #333; 背景色 */
+    z-index: 1000;
+    /* 让这个置顶，不然被那个absolute的元素压在下面了  */
+}
+
+.navbar nav {
+    /* 居中 */
+    text-align: center; 
+    padding: 14px 0; 
+}
+
+.navbar nav ul {
+    list-style-type: none; 
+    /* 见note.md */
+    /* 使列表居中 */
+    margin: 0 auto; 
+    padding: 0; 
+    /* 使ul可以设置左右外边距,见note.md */
+    display: inline-block; 
+}
+
+.navbar nav ul li {
+    /* 将选项设置为水平的行内元素,见note.md */
+    display: inline; 
+}
+
+.navbar nav ul li a {
+    /* 将链接设置为行内块元素，以应用尺寸和边距，不然会很扁 */
+    display: inline-block; 
+    color: white; 
+    /* 居中 */
+    text-align: center; 
+    padding: 14px 20px;
+    /* 移除丑丑的下划线  */
+    text-decoration: none; 
+}
+
+.navbar nav ul li a:hover {
+    background-color: #efb3d5; /* 鼠标悬停时的背景色 */
+}

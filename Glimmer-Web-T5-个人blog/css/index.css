@@ -1,0 +1,75 @@
+.shell{
+    /* 使宽度为父元素block的宽度 */
+    width: 100%;
+    /* 高度为400像素 */
+    height: 400px;
+    /* 使用flex布局，这样内部的.box元素可以水平排列 */
+    display: flex;
+}
+
+.box{
+    /* 摘录：flex: 1：让所有弹性盒模型对象的子元素都有相同的长度，且忽略它们内部的内容 */
+    flex: 1;
+    /* 内容超出边界则隐藏 */
+    overflow: hidden;
+    /* 设置个过渡时间让变化更丝滑 */
+    transition: .5s;/*重要！*/
+    /* 设置元素的外边距，左右为20像素，上下为0 */
+    margin: 0 20px;/*盒子中间需要距离*/
+    /* 添加阴影效果 20px使模糊半径 */
+    box-shadow: 10px 10px 20px rgba(152, 106, 158, 0.5);
+    /* 圆角边框，实线10px */
+    border: 10px solid #fff;
+    border-radius: 20px;
+}
+
+/* 选择box里的img */
+.box>img{
+    /* 图片宽度超出box，高度和box一样，形成横向压缩的效果 */
+    width: 200%;
+    height: 100%;
+    /*必须加上这个！！不然图片在未被悬停的时候会被压扁而不是被“裁切一样的压缩*/
+    /* object-fit(指定元素的内容应该如何去适应指定容器的高度与宽度。):cover---保持原有尺寸比例。但部分内容可能被剪切。 */
+    object-fit: cover;
+    /* 过渡效果 */
+    transition: .5s;
+}
+
+/* 悬停在class为box的元素上时，使元素的flex-basis为40%，即在flex布局中占据40%的空间，形成图片展开的效果 */
+.box:hover{
+    flex-basis: 40%;
+}
+
+/*悬停在class为box的元素上时，选择内部的img元素,使图片不要放大成原大小，不然就有类似于放大镜的效果了，这样让图片展开更丝滑好看*/
+.box:hover>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* 写回到顶部按钮 */
+.top {
+    /* 固定按钮位置 */
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    /* 去掉丑边框 */
+    border: none;
+    background-color: rgb(223, 158, 230);
+    color: white;
+    /* cursor: pointer:指针悬停在链接或可点击元素上时，光标的形状变为手形图标，这通常用来指示一个元素是可点击的 */
+    /* 主要是这个不是用的链接,<a>标签也会有这个效果，当然这个也可以用css做，不过感觉做这个js函数用起来更丝滑，css需要加一下transition */
+    cursor: pointer;
+    /* 设置内边距，让按钮成一个合适的形状，而不是紧贴元素 */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+
+
+.top:hover {
+    background-color: rgb(166, 111, 210);
+}

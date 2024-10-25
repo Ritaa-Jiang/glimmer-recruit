@@ -1,0 +1,25 @@
+body{
+    background-color: #101519;
+}
+#area{
+    width: 1500px;
+    height: 600px;
+    /* background-color: aqua; */
+    display:block;
+    margin: auto;
+    margin-top: 100px;
+}
+#area>img{
+    height:120px ;
+    display: block;
+    margin-top: 20px;
+}
+#bottom{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: 220px;
+    margin: 0;
+    background-image: url(../img/bg_bottom.jpg);
+}
