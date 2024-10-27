@@ -150,6 +150,7 @@ p{
 .navbar nav {
     /* 居中 */
     text-align: center; 
+        /* 可以让所有元素都居中 */
     padding: 14px 0; 
 }
 
@@ -171,10 +172,12 @@ p{
 .navbar nav ul li a {
     /* 将链接设置为行内块元素，以应用尺寸和边距，不然会很扁 */
     display: inline-block; 
+        /* 因为a的高度都是固定的，a本身是行内元素，高度宽度不可控制 */
     color: white; 
     /* 居中 */
     text-align: center; 
     padding: 14px 20px;
+        /* 将a的位置撑开，而不是紧贴着a的文本 */
     /* 移除丑丑的下划线  */
     text-decoration: none; 
 }

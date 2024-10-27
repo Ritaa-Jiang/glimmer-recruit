@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>get</title>
+</head>
+<body>
+    <!-- ID 选择器 -->
+    <p id="static1">一</p>
+    <!-- 类选择器 -->
+    <p class="static2">二</p>
+    <p class="static2">三</p>
+    <p class="num">11</p>
+
+
+    <script>
+        //getElementById--ID选择器
+        let get1 = document.getElementById('static1');
+        //console.log(get1);
+        console.log(get1.textContent);
+        // querySelector--只会返回第一个元素，没有就是null
+        let get2 = document.querySelector('.static2');
+        //括号里的类选择器需要以.开头
+        //console.log(get2);
+        console.log(get2.textContent);
+
+        // let data = (.num); 
+        // console.log(data)
+
+        let number = document.querySelector('.num');//获取文本
+        //let data = parseInt(number.textContent); // 转换数字
+        let data = parseInt(number.textContent,10); // 确保转化为十进制
+        console.log(data); 
+    </script>
+</body>
+</html>
